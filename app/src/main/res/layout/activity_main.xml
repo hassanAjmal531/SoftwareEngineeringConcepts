@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDBDBD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/nentry"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_account_circle"
+        android:drawablePadding="15dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Full Name"
+       android:layout_below="@id/text_reg"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="#ffffff"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_account_circle"
+        android:drawablePadding="15dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Age"
+        android:layout_below="@id/nentry"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="#ffffff"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_account_circle"
+        android:drawablePadding="15dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Email"
+        android:textColor="#ffffff"
+       android:layout_below="@id/age"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"/>
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_border"
+        android:drawableLeft="@drawable/ic_account_circle"
+        android:drawablePadding="15dp"
+        android:hint="Gender"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:id="@+id/password"
+        android:drawableLeft="@drawable/ic_account_circle"
+        android:background="@drawable/edittext_border"
+        android:layout_below="@id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:paddingLeft="10dp"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/login_border"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:textAllCaps="false"/>
+
+
+
+</RelativeLayout>
